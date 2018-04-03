@@ -25,4 +25,8 @@ public class ItemController {
         return tbItem;
     }
 
+    @RequestMapping("/")
+    public String getIndex(){
+        return "index";
+    }
 }
