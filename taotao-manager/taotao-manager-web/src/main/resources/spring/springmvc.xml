@@ -16,11 +16,8 @@
         <property name="suffix" value=".jsp" />
     </bean>
     <!-- 资源映射 -->
-    <mvc:resources location="/WEB-INF/css/" mapping="/css/**" />
-    <mvc:resources location="/WEB-INF/js/" mapping="/js/**" />
-
-    <!--<mvc:resources location="/WEB-INF/" mapping="/**/css/**"/>-->
-    <!--<mvc:resources location="/WEB-INF/" mapping="/**/js/**"/>-->
+    <mvc:resources mapping="/css/**" location="/WEB-INF/css/" />
+    <mvc:resources mapping="/js/**" location="/WEB-INF/js/" />
 
     <!-- 定义文件上传解析器 -->
     <!--<bean id="multipartResolver"-->
